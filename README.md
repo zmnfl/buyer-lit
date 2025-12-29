@@ -1,6 +1,6 @@
 # Lit Token Bot
 
-A Python bot that tracks the appearance of the **LIT token** on the **Lighter exchange**. Once the token appears, the bot automatically buys it and sends a notification to a Telegram bot.
+A Python bot that TRACKS the appearance of the **LIT token** on the **Lighter exchange**. Once the token appears, the bot automatically BUYS and ***optional SENDS a notification to a Telegram bot***.
 
 ---
 
@@ -8,8 +8,7 @@ A Python bot that tracks the appearance of the **LIT token** on the **Lighter ex
 
 - Monitors the Lighter exchange for the LIT token.
 - Automatically purchases the token as soon as it is listed.
-- Sends real-time notifications to a Telegram chat (**optional**).
-- Fully configurable via environment files.
+- Sends real-time notifications to a Telegram chat (**OPTIONAL**).
 
 ---
 
@@ -20,6 +19,8 @@ Install the necessary dependencies listed in `req.txt`:
 ```bash
 pip install -r req.txt
 ```
+
+---
 
 ## Configuration
 
@@ -68,6 +69,8 @@ This file contains the Python dependencies required for the project. Install the
 pip install -r req.txt
 ```
 
+---
+
 ## Usage
 
 Run the bot with:
@@ -80,9 +83,11 @@ python lit.py
 - When the LIT token appears, it will automatically place orders from orders.txt and send Telegram notifications.
 - To stop the bot at any time, press Control + C.
 
+---
+
 ## Notes
 
 - Ensure your Telegram bot token and chat ID are correct for notifications.
-- If you do not want to use Telegram notifications, **you can leave TG_TOKEN and CHAT_ID empty ("") if you don't need notifications**.
+- If you do not want to use Telegram notifications, ***you can leave TG_TOKEN and CHAT_ID empty ("") if you don't need notifications***.
 - Make sure orders.txt is correctly formatted with one order per line.
 - Use a secure environment for storing API keys and sensitive information.
